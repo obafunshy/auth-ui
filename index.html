@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auth UI</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -48,35 +50,35 @@
     </header>
     <section class="relative z-10 flex flex-col items-center justify-center text-center min-h-[70vh] sm:min-h-screen px-4" style="background-image: url('assets/images/hero.jpg') ;">
         <!-- Overlay  -->
-         <div class="absolute inset-0 bg-black bg-opacity-60">
+         <div class="absolute inset-0 bg-black bg-opacity-50">
             <!-- content  -->
              <div class="relative z-10 flex flex-col items-center justify-center text-center min-h-screen px-4">
-                <div class="text-white text-3xl sm:text-5xl font-extrabold mb-4">Build, Launch Faster</div>
-                <p class="text-white text-base sm:text-lg max-w-xl mb-6">
+                <div class="text-white text-3xl sm:text-5xl font-extrabold mb-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">Build, Launch Faster</div>
+                <p class="text-white text-base sm:text-lg max-w-xl mb-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
                     Create your own authentication UI project using HTML, Tailwind CSS and Javascript.
                 </p>
-                <a href="signup.html" class="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">Get Started</a>
+                <a href="signup.html" class="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition hover:scale-105 hover:shadow-lg" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">Get Started</a>
              </div>
          </div>
     </section>
     <section class="bg-white py-16 px-4 sm:px-6 lg:px-8">
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
            <!-- Text Column   -->
-            <div class="">
+            <div data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
                 <h2 class="text-2xl sm:text-3xl font-bold mb-4">About Our Company</h2>
                 <p class="text-gray-700 text-base sm:text-lg leading-relaxed">
                     We build fast, responsive, and scalable user interfaces with clear code and great user experience. Our mission is to empower developers and businesses by providing UI tools that make authentication flows simple and accessible.
                 </p>
-                <a href="#" class="inline-block mt-6 px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">Read More</a>
+                <a href="#" class="inline-block mt-6 px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition hover:scale-105 hover:shadow-lg">Read More</a>
             </div>
 
             <!-- Image column  -->
-            <div class="w-full h-64 bg-gray-100 rounded-lg shadow-inner flex items-center justify-center">
+            <div class="w-full h-64 bg-gray-100 rounded-lg shadow-inner flex items-center justify-center" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
                 <img src="./assets/images/team-work.jpg" alt="Team working" class="w-full h-64 object-cover rounded-lg shadow-md">
             </div>
         </div>
     </section>
-    <section class="bg-gray-50 py-16">
+    <section id="services" class="bg-gray-50 py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
                 <h2 class="text-2xl sm:text-3xl font-bold mb-4">Our Services</h2>
@@ -84,9 +86,10 @@
                     We provide powerful tools and intuitive UI experiences to bring your projects to life. 
                 </p>
             </div>
-            <div class="max-w 6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Service Item  -->
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center" data-aos="fade-up" data-aos-delay="0"
+     data-aos-duration="800">
                     <div class="text-blue-600 text-4xl mb-4">
                         <i class="fas fa-laptop-code"></i>
                     </div>
@@ -96,7 +99,8 @@
                     </p>
                 </div>
                 <!-- Service Item  -->
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center" data-aos="fade-up" data-aos-delay="100"
+     data-aos-duration="800">
                     <div class="text-blue-600 text-4xl mb-4">
                         <i class="fas fa-lock"></i>
                     </div>
@@ -106,7 +110,8 @@
                     </p>
                 </div>
                 <!-- Service Item  -->
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center" data-aos="fade-up" data-aos-delay="200"
+     data-aos-duration="800">
                     <div class="text-blue-600 text-4xl mb-4">
                         <i class="fas fa-bolt"></i>
                     </div>
@@ -116,7 +121,8 @@
                     </p>
                 </div>
                 <!-- Service Item  -->
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center" data-aos="fade-up" data-aos-delay="300"
+     data-aos-duration="800">
                     <div class="text-blue-600 text-4xl mb-4">
                         <i class="fas fa-tools"></i>
                     </div>
@@ -126,7 +132,8 @@
                     </p>
                 </div>
                 <!-- Service Item  -->
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center" data-aos="fade-up" data-aos-delay="400"
+     data-aos-duration="800">
                     <div class="text-blue-600 text-4xl mb-4">
                         <i class="fas fa-layer-group"></i>
                     </div>
@@ -136,7 +143,8 @@
                     </p>
                 </div>
                 <!-- Service Item  -->
-                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center" data-aos="fade-up" data-aos-delay="500"
+     data-aos-duration="800">
                     <div class="text-blue-600 text-4xl mb-4">
                         <i class="fas fa-lightbulb"></i>
                     </div>
@@ -147,9 +155,147 @@
                 </div>
         </div>
         <div class="col-span-1 sm:col-span-2 lg:col-span-3 mt-6 flex justify-center">
-            <a href="#" class="mt-6 px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">Learn More</a>
+            <a href="#" class="mt-6 px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition hover:scale-105 hover:shadow-lg">Learn More</a>
         </div>
     </section>
+    <section id="project" class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+             <div class="text-center mb-12">
+                <h2 class="text-2xl sm:text-3xl font-bold mb-4">Our Projects</h2>
+                <p class="text-gray-700 max-w-2xl mx-auto text-base sm:text-lg">
+                    Browse through our recent work across multiple platforms.
+                </p>  
+            </div>
+
+            <!-- Filter Buttons  -->
+            <div class="flex flex-wrap justify-center gap-4 mb-10">
+                <button class="filter-btn px-4 py-2 bg-blue-600 text-white rounded" data-filter="all">All</button>
+                <button class="filter-btn px-4 py-2 bg-gray-200 text-gray-700 rounded" data-filter="ui">UI</button>
+                <button class="filter-btn px-4 py-2 bg-gray-200 text-gray-700 rounded" data-filter="web">Web</button>
+                <button class="filter-btn px-4 py-2 bg-gray-200 text-gray-700 rounded" data-filter="mobile">Mobile</button>
+            </div>
+
+            <!-- Projects Grid  -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="project-gallery">
+                <!-- Project Item  -->
+                <div class="relative project-item" data-category="ui" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="800">
+                    <a href="assets/images/projects/ui-1.jpg" data-lightbox="gallery" class="block">
+                        <img src="assets/images/projects/ui-1.jpg" alt="UI Project" class="rounded shadow w-full h-64 object-cover animate__animated animate__zoomIn ">
+                    </a>
+                    <span class="absolute top-2 left-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">UI</span>
+                </div>
+                <div class="relative project-item" data-category="web" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="800">
+                    <a href="assets/images/projects/web-1.jpg" data-lightbox="web" class="block">
+                        <img src="assets/images/projects/web-1.jpg" alt="Web Project" class="rounded shadow w-full h-64 object-cover animate__animated animate__zoomIn ">
+                    </a>
+                    <span class="absolute top-2 left-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">Web</span>
+                </div>
+                <div class="relative project-item" data-category="mobile" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="800">
+                    <a href="assets/images/projects/mobile-1.jpg" data-lightbox="mobile" class="block">
+                        <img src="assets/images/projects/mobile-1.jpg" alt="Mobile Project" class="rounded shadow w-full h-64 object-cover animate__animated animate__zoomIn ">
+                    </a>
+                    <span class="absolute top-2 left-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">Mobile</span>
+                </div>
+                <div class="relative project-item" data-category="ui" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="800">
+                    <a href="assets/images/projects/ui-2.jpg" data-lightbox="gallery" class="block">
+                        <img src="assets/images/projects/ui-2.jpg" alt="UI Project 2" class="rounded shadow w-full h-64 object-cover animate__animated animate__zoomIn ">
+                    </a>
+                    <span class="absolute top-2 left-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">UI</span>
+                </div>
+                <div class="relative project-item" data-category="web" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="800">
+                    <a href="assets/images/projects/web-2.jpg" data-lightbox="web" class="block">
+                        <img src="assets/images/projects/web-2.jpg" alt="Web Project 2" class="rounded shadow w-full h-64 object-cover animate__animated animate__zoomIn ">
+                    </a>
+                    <span class="absolute top-2 left-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">Web</span>
+                </div>
+                <div class="relative project-item" data-category="mobile" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="800">
+                    <a href="assets/images/projects/mobile-2.jpg" data-lightbox="mobile" class="block">
+                        <img src="assets/images/projects/mobile-2.jpg" alt="Mobile Project 2" class="rounded shadow w-full h-64 object-cover animate__animated animate__zoomIn ">
+                    </a>
+                    <span class="absolute top-2 left-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">Mobile</span>
+                </div>
+            </div>
+          </div>
+    </section>
+    <section id="contact" class="bg-blue-50 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 items-center animate__animated animate__fadeInUp">
+                <div class="md:col-span-3">
+                    <h2 class="text-xl sm:text-2xl font-semibold text-gray-800" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
+                        Have a project in mind? Let's build something great together.
+                    </h2>
+                </div>
+                <div class="md:col-span-1 text-left md:text-right" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+                    <a href="#" class="inline-block px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition hover:scale-105 hover:shadow-lg">Get a Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-gray-900 text-gray-300 py-16 animate__fadeInUp">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-white text-xl font-bold mb-4">Auth UI</h3>
+                    <p class="text-sm mb-4">
+                        A modern authentication UI kit for fast, responsive frontends. Built with Tailwind CSS and love.
+                    </p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="hover:text-white text-lg"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-white text-lg"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-white text-lg"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="hover:text-white text-lg"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Navigation</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="hover:text-white">Home</a></li>
+                        <li><a href="#services" class="hover:text-white">Services</a></li>
+                        <li><a href="#project" class="hover:text-white">Project</a></li>
+                        <li><a href="#contact" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Useful Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="login.html" class="hover:text-white">Login</a></li>
+                        <li><a href="signup.html" class="hover:text-white">Sign Up</a></li>
+                        <li><a href="forgot-password.html" class="hover:text-white">Forgot Password</a></li>
+                        <li><a href="reset-password.html" class="hover:text-white">Reset Password</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> Creative Lane, Design City</i></li>
+                        <li><i class="fas fa-envelope mr-2"></i>info@authui.com</li>
+                        <li><i class="fas fa-phone mr-2"></i>+ (234) 576-890</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mt-6 border-t border-gray-700 pt-3 text-center text-sm text-gray-400">
+            &copy; 2025 Auth UI. All rights reserved.
+            <a href="https://github.com/obafunshy" target="_blank" class="text-blue-400 hover:underline ml-1">
+                View on Github
+            </a>
+        </div>
+    </footer>
     <script src="./scripts/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>  AOS.init({
+                once: false, // animations will happen every time you scroll
+                duration: 800, // global duration if not set inline
+                });
+    </script>
 </body>
 </html>
+<!-- Photo by fauxels: https://www.pexels.com/photo/man-wearing-brown-suit-jacket-3184339/  -->
+ <!-- Photo by Plann: https://www.pexels.com/photo/person-using-smartphone-application-4549418/  -->
+  <!-- Photo by Vlada Karpovich: https://www.pexels.com/photo/woman-working-at-home-using-her-laptop-4050290/  -->
+   <!-- Photo by Tofros.com: https://www.pexels.com/photo/woman-holding-black-smartphone-389734/ -->
+   <!-- Photo by Matheus Bertelli: https://www.pexels.com/photo/mobile-ai-chatbot-interface-on-smartphone-30530423/  -->
+<!-- Photo by Stefan Coders: https://www.pexels.com/photo/midnight-black-samsung-galaxy-s9-2048774/  -->
+ <!-- Photo by Firmbee.com: https://www.pexels.com/photo/a-person-typing-on-a-laptop-7075408/  -->
