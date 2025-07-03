@@ -8,6 +8,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header class="bg-white shadow-md sticky top-0 z-50">
@@ -71,18 +74,26 @@
             </div>
         </div>
     </header>
-    <section class="relative z-10 flex flex-col items-center justify-center text-center min-h-[70vh] sm:min-h-screen px-4" style="background-image: url('assets/images/hero.jpg') ;">
-        <!-- Overlay  -->
-         <div class="absolute inset-0 bg-black bg-opacity-50">
-            <!-- content  -->
-             <div class="relative z-10 flex flex-col items-center justify-center text-center min-h-screen px-4">
-                <div class="text-white text-3xl sm:text-5xl font-extrabold mb-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">Build, Launch Faster</div>
-                <p class="text-white text-base sm:text-lg max-w-xl mb-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
-                    Create your own authentication UI project using HTML, Tailwind CSS and Javascript.
-                </p>
-                <a href="signup.html" class="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition hover:scale-105 hover:shadow-lg" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">Get Started</a>
-             </div>
-         </div>
+    <section class="owl-carousel owl-theme">
+        <div class="relative h-[90vh] bg-cover bg-center flex items-center justify-center text-white" style="background-image: url('./assets/images/sliders/slide-1.jpg');">
+            <div class="bg-black bg-opacity-50 p-8 rounded text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">Welcome to Auth UI</h2>
+            <p class="text-lg">Build stunning UIs with ease and speed</p>
+            </div>
+        </div>
+        <div class="relative h-[90vh] bg-cover bg-center flex items-center justify-center text-white" style="background-image: url('./assets/images/sliders/slide-2.jpg');">
+            <div class="bg-black bg-opacity-50 p-8 rounded text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">Fully Responsive</h2>
+            <p class="text-lg">Perfect on all devices and screen sizes</p>
+            </div>
+        </div>
+        <div class="relative h-[90vh] bg-cover bg-center flex items-center justify-center text-white" style="background-image: url('./assets/images/sliders/slide-3.jpg');">
+            <div class="bg-black bg-opacity-50 p-8 rounded text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">Easy to Customize</h2>
+            <p class="text-lg">Tailwind CSS makes styling fast and flexible</p>
+            </div>
+        </div>
+    </div>
     </section>
     <section class="bg-white py-16 px-4 sm:px-6 lg:px-8">
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
@@ -240,6 +251,39 @@
             </div>
           </div>
     </section>
+    <section id="testimonials" class="py-20 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-12" data-aos="fade-up">
+            What Our Clients Say
+            </h2>
+
+            <div class="owl-carousel owl-theme" data-aos="fade-up" data-aos-delay="100">
+            <!-- Testimonial 1 -->
+            <div class="bg-white rounded-lg shadow-md px-6 py-8 text-center mx-2">
+                <img src="./assets/images/avatars/avatar-1.jpg" alt="Jane Doe" class="w-20 h-20 mx-auto rounded-full mb-4 border-4 border-blue-100 object-cover">
+                <p class="text-gray-600 italic mb-4">“Auth UI has drastically improved our design process. It's beautiful and easy to work with.”</p>
+                <h4 class="text-blue-600 font-semibold text-lg">Jane Doe</h4>
+                <span class="text-sm text-gray-500">Product Manager, Example Co.</span>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="bg-white rounded-lg shadow-md px-6 py-8 text-center mx-2">
+                <img src="./assets/images/avatars/avatar-2.jpg" alt="John Smith" class="w-20 h-20 mx-auto rounded-full mb-4 border-4 border-blue-100 object-cover">
+                <p class="text-gray-600 italic mb-4">“Responsive and elegant. Our users love the new UI!”</p>
+                <h4 class="text-blue-600 font-semibold text-lg">John Smith</h4>
+                <span class="text-sm text-gray-500">CTO, TechHub</span>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="bg-white rounded-lg shadow-md px-6 py-8 text-center mx-2">
+                <img src="./assets/images/avatars/avatar-3.jpg" alt="Emily Ray" class="w-20 h-20 mx-auto rounded-full mb-4 border-4 border-blue-100 object-cover">
+                <p class="text-gray-600 italic mb-4">“Highly recommend for modern front-end projects!”</p>
+                <h4 class="text-blue-600 font-semibold text-lg">Emily Ray</h4>
+                <span class="text-sm text-gray-500">UI/UX Designer, SoftStudio</span>
+            </div>
+            </div>
+        </div>
+    </section>
     <section id="contact" class="bg-blue-50 py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-6 items-center animate__animated animate__fadeInUp">
@@ -332,6 +376,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script>  AOS.init({ once: false, // animations will happen every time you scroll
                 duration: 800, // global duration if not set inline
                 });
@@ -346,3 +392,7 @@
    <!-- Photo by Matheus Bertelli: https://www.pexels.com/photo/mobile-ai-chatbot-interface-on-smartphone-30530423/  -->
 <!-- Photo by Stefan Coders: https://www.pexels.com/photo/midnight-black-samsung-galaxy-s9-2048774/  -->
  <!-- Photo by Firmbee.com: https://www.pexels.com/photo/a-person-typing-on-a-laptop-7075408/  -->
+<!-- Slider  -->
+ <!-- Photo by Christina Morillo: https://www.pexels.com/photo/two-women-looking-at-the-code-at-laptop-1181263/  -->
+  <!-- Photo by Mikhail Nilov: https://www.pexels.com/photo/men-looking-at-the-code-on-the-board-7988747/  -->
+   <!-- Photo by Pixabay: https://www.pexels.com/photo/turned-on-imac-beside-macbook-on-table-39284/  -->

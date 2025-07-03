@@ -1,0 +1,8 @@
+.dropdown-fix {
+  margin-top: 8px;
+  transform: translateY(-8px);
+}
+/* override owl default image width */
+.owl-carousel .owl-item img {
+    width: auto !important;
+}
